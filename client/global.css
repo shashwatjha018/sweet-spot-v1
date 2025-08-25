@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    /* Sweet Spot Base Theme */
+    --background: 35 50% 97%;
+    --foreground: 20 14% 20%;
+
+    --card: 35 45% 95%;
+    --card-foreground: 20 14% 20%;
+
+    --popover: 35 45% 95%;
+    --popover-foreground: 20 14% 20%;
+
+    --primary: 340 85% 70%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 40% 92%;
+    --secondary-foreground: 20 14% 20%;
+
+    --muted: 35 35% 90%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 160 40% 85%;
+    --accent-foreground: 20 14% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 30% 88%;
+    --input: 35 30% 88%;
+    --ring: 340 85% 70%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 35 45% 95%;
+    --sidebar-foreground: 20 14% 20%;
+    --sidebar-primary: 340 85% 70%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 35% 90%;
+    --sidebar-accent-foreground: 20 14% 20%;
+    --sidebar-border: 35 30% 88%;
+    --sidebar-ring: 340 85% 70%;
+
+    /* Sweet Spot Pastel Color Palette */
+    --cream-50: 35 100% 98%;
+    --cream-100: 35 80% 95%;
+    --cream-200: 35 60% 90%;
+    --cream-300: 35 50% 85%;
+    --cream-400: 35 45% 80%;
+    --cream-500: 35 40% 75%;
+    --cream-600: 35 35% 70%;
+
+    --blush-50: 340 100% 97%;
+    --blush-100: 340 90% 92%;
+    --blush-200: 340 85% 85%;
+    --blush-300: 340 80% 78%;
+    --blush-400: 340 75% 72%;
+    --blush-500: 340 70% 65%;
+    --blush-600: 340 65% 58%;
+
+    --mint-50: 160 60% 95%;
+    --mint-100: 160 55% 90%;
+    --mint-200: 160 50% 85%;
+    --mint-300: 160 45% 78%;
+    --mint-400: 160 40% 72%;
+    --mint-500: 160 35% 65%;
+    --mint-600: 160 30% 58%;
+
+    --chocolate-50: 20 30% 95%;
+    --chocolate-100: 20 35% 88%;
+    --chocolate-200: 20 40% 78%;
+    --chocolate-300: 20 45% 68%;
+    --chocolate-400: 20 50% 58%;
+    --chocolate-500: 20 55% 48%;
+    --chocolate-600: 20 60% 38%;
+    --chocolate-700: 20 65% 28%;
+    --chocolate-800: 20 70% 20%;
+    --chocolate-900: 20 75% 12%;
+  }
+
+  .dark {
+    /* Sweet Spot Dark Mode */
+    --background: 20 40% 8%;
+    --foreground: 35 20% 88%;
+
+    --card: 20 35% 12%;
+    --card-foreground: 35 20% 88%;
+
+    --popover: 20 35% 12%;
+    --popover-foreground: 35 20% 88%;
+
+    --primary: 340 70% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 30% 18%;
+    --secondary-foreground: 35 20% 88%;
+
+    --muted: 20 25% 15%;
+    --muted-foreground: 35 15% 65%;
+
+    --accent: 160 30% 25%;
+    --accent-foreground: 35 20% 88%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 25% 22%;
+    --input: 20 25% 22%;
+    --ring: 340 70% 60%;
+
+    --sidebar-background: 20 35% 12%;
+    --sidebar-foreground: 35 20% 88%;
+    --sidebar-primary: 340 70% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 25% 15%;
+    --sidebar-accent-foreground: 35 20% 88%;
+    --sidebar-border: 20 25% 22%;
+    --sidebar-ring: 340 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
